@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 4,
-  "validUntil": "2027-11-04T10:35:17.249Z",
+  "revision": 5,
+  "validUntil": "2027-11-04T10:36:08.715Z",
   "notices": [
     {
       "id": "notice_61bf2212-4ff3-49d7-a5bc-37ed1e1d2e1c",
@@ -14,13 +14,25 @@
           "body": "ناالتا"
         }
       }
+    },
+    {
+      "id": "notice_013a817f-24bc-40c6-bc25-ecadae8082ef",
+      "start": "2026-11-04T10:28:00.000Z",
+      "end": "2026-11-11T10:29:00.000Z",
+      "role": "all",
+      "texts": {
+        "ar": {
+          "title": "new version",
+          "body": "اعلان نسخة جديدة قريبا"
+        }
+      }
     }
   ],
   "appearance": {
     "start": "2026-11-04T10:26:00.000Z",
     "end": "2026-11-11T10:27:00.000Z",
     "role": "all",
-    "color": "#fbff00",
+    "color": "#ff0000",
     "decoration": "crescent"
   }
 }
