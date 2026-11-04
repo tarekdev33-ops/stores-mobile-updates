@@ -1,41 +1,16 @@
 {
   "schema": 1,
-  "revision": 8,
-  "validUntil": "2027-11-04T18:29:22.618Z",
-  "notices": [
-    {
-      "id": "notice_61bf2212-4ff3-49d7-a5bc-37ed1e1d2e1c",
-      "start": "2026-11-04T10:26:00.000Z",
-      "end": "2026-11-11T10:27:00.000Z",
-      "role": "all",
-      "texts": {
-        "ar": {
-          "title": "نالتالتغل",
-          "body": "ناالتا"
-        }
-      }
-    },
-    {
-      "id": "notice_013a817f-24bc-40c6-bc25-ecadae8082ef",
-      "start": "2026-11-04T10:28:00.000Z",
-      "end": "2026-11-11T10:29:00.000Z",
-      "role": "all",
-      "texts": {
-        "ar": {
-          "title": "new version",
-          "body": "اعلان نسخة جديدة قريبا"
-        }
-      }
-    }
-  ],
+  "revision": 9,
+  "validUntil": "2027-11-04T18:33:26.327Z",
+  "notices": [],
   "appearance": {
-    "start": "2026-11-04T18:31:00.000Z",
+    "start": "2026-11-04T18:35:00.000Z",
     "end": "2026-11-11T10:27:00.000Z",
     "role": "all",
     "color": "#4dcece",
     "textColor": "#edf2f7",
-    "iconImageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/3bfb3fe2-f988-4fee-9e7e-3ddca1bad2c6.webp",
-    "nameImageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/3bfb3fe2-f988-4fee-9e7e-3ddca1bad2c6.webp",
+    "iconImageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/4d01a79b-b015-4e8f-a1c4-4bc3d32a2cc8.webp",
+    "nameImageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/4d01a79b-b015-4e8f-a1c4-4bc3d32a2cc8.webp",
     "brandMode": "image",
     "brandTarget": "both",
     "decoration": "sparkles",
