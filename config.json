@@ -1,7 +1,13 @@
 {
   "schema": 1,
-  "revision": 1,
-  "validUntil": "2027-10-29T20:59:46.326553+00:00",
+  "revision": 2,
+  "validUntil": "2027-11-04T10:27:41.178Z",
   "notices": [],
-  "appearance": null
+  "appearance": {
+    "start": "2026-11-04T10:26:00.000Z",
+    "end": "2026-11-11T10:27:00.000Z",
+    "role": "all",
+    "color": "#ebee11",
+    "decoration": "sparkles"
+  }
 }
