@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 3,
-  "validUntil": "2027-11-04T10:29:48.542Z",
+  "revision": 4,
+  "validUntil": "2027-11-04T10:35:17.249Z",
   "notices": [
     {
       "id": "notice_61bf2212-4ff3-49d7-a5bc-37ed1e1d2e1c",
@@ -21,6 +21,6 @@
     "end": "2026-11-11T10:27:00.000Z",
     "role": "all",
     "color": "#fbff00",
-    "decoration": "sparkles"
+    "decoration": "crescent"
   }
 }
