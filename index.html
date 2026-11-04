@@ -82,7 +82,7 @@ async function prepareImage(file){
 for(const [input,kind] of [['noticeImage','notice'],['iconImage','icon'],['nameImage','name']])$(input).onchange=async()=>{try{
  const url=await prepareImage($(input).files[0]);if(kind==='notice'){noticeImageUrl=url;imagePreview()}else if(kind==='icon')iconImageUrl=url;else nameImageUrl=url;brandPreview();status('الصورة جاهزة. احفظ في المسودة ثم انشر.');
  }catch(e){status(e.message)}finally{$(input).value=''}};
-$('removeNoticeImage').onclick=()=>{noticeImageUrl='';imagePreview()};$('removeIconImage').onclick=()=>{iconImageUrl='';brandPreview()};$('removeNameImage').onclick=()=>{nameImageUrl='';brandPreview()};$('color').oninput=$('textColor').oninput=brandPreview;
+$('removeNoticeImage').onclick=()=>{noticeImageUrl='';imagePreview()};$('removeIconImage').onclick=()=>{iconImageUrl='';nameImageUrl='';brandPreview()};$('removeNameImage').onclick=()=>{nameImageUrl='';brandPreview()};$('color').oninput=$('textColor').oninput=brandPreview;
 async function uploadReferenced(next){const refs=new Set(next.notices.map(n=>n.imageUrl));if(next.appearance){refs.add(next.appearance.iconImageUrl);refs.add(next.appearance.nameImageUrl)}for(const url of refs){const item=uploads.get(url);if(!item||item.uploaded)continue;status('جار رفع صورة الإعلان أو الشعار…');await github('PUT',{message:'Upload public Stores campaign artwork',branch:'main',content:item.content},item.path);item.uploaded=true}}
 function selectedBrand(strict=true){
  const mode=$('brandMode').value,target=$('brandTarget').value,icon=target!=='name',name=target!=='icon',image=iconImageUrl||nameImageUrl;
