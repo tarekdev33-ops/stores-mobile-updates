@@ -1,0 +1,11 @@
+# Stores Mobile 0.8.5
+
+Cash balances return to stacked currency rows with flags. Invoice creation has a date-only header, a centered party picker, one-line titles, and item entry in the barcode strip. Empty item placeholders are removed; existing line cards remain available after adding items. Item photo actions align vertically. Account branch creation is offered for main accounts only.
+
+Customers and suppliers share one directory with search, count, edit/delete hints and a type selector at creation. They use their respective configured parent accounts, including queued offline changes. Address is a new independent field; existing nationality is preserved. Workspace JSON version 26 accepts prior version 25. SQLite schema remains 5 because account data is in the validated workspace payload. Updating primary and terminals together is required for supplier/address commands; protocol capabilities reject unsupported operations against an older primary instead of silently discarding details. Changing a party's category through the quick edit dialog is disabled to avoid silently moving financial history.
+
+The supplier selection default uses the supplier root in the Stores chart. Old individual supplier cards and all document party references remain intact. Migration changes prospective selection settings; it does not rewrite historical documents or ledger entries. New invoice posting still requires an eligible subsidiary account for credit transactions.
+
+The final More entries are scale settings, activation, news, sign out, About. News supports photos and enlargement. Campaign colors and image textures independently affect the original icon and Stores lettering. Decorations fill only the header, subtly behind text, with bounded accelerometer response, pause handling and reduce-motion support. Fresh installs fetch published settings without a cache; refresh requests bypass stale CDN entries, use an HTTPS fallback, and show a manual refresh/status.
+
+Install the signed APK over the existing application without clearing data. Backups remain advisable before updating accounting software. No paid infrastructure or new external service is required. Firebase push configuration remains separate from publishing the public campaign feed.
