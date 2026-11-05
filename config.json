@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 13,
-  "validUntil": "2027-11-05T11:14:53.857Z",
+  "revision": 14,
+  "validUntil": "2027-11-05T11:20:09.393Z",
   "notices": [
     {
       "id": "notice_34583233-3921-4085-a7f5-fa19dab4c2bd",
@@ -38,10 +38,8 @@
     "role": "all",
     "color": "#4dcece",
     "textColor": "#edf2f7",
-    "iconImageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/4d01a79b-b015-4e8f-a1c4-4bc3d32a2cc8.webp",
-    "nameImageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/4d01a79b-b015-4e8f-a1c4-4bc3d32a2cc8.webp",
-    "brandMode": "image",
-    "brandTarget": "both",
+    "brandMode": "color",
+    "brandTarget": "icon",
     "decoration": "sparkles",
     "motion": true
   }
