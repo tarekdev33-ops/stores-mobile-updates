@@ -1,0 +1,16 @@
+{
+  "versionName": "0.8.7",
+  "versionCode": 2075,
+  "sourceBuild": 75,
+  "package": "com.tarekdev.stores.stores_flutter",
+  "uploadCertificateSha256": "83277f0ce1102ce2dc4f90ade4122a54819dbac868a2bee7aa86723ddc6cc22a",
+  "signatureMatchesUploadKey": true,
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a",
+    "x86_64"
+  ],
+  "bytes": 87090549,
+  "sha256": "d3901156c1c88c2bd03d74b907cc36d4cee383965eeee8ef62445a39f2945408",
+  "bundletoolValidation": true
+}
