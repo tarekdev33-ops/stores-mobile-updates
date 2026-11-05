@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 10,
-  "validUntil": "2027-11-04T20:37:31.435Z",
+  "revision": 11,
+  "validUntil": "2027-11-05T11:06:51.081Z",
   "notices": [
     {
       "id": "notice_34583233-3921-4085-a7f5-fa19dab4c2bd",
@@ -17,6 +17,19 @@
       "minVersion": "0.7.8",
       "maxVersion": "0.8.5",
       "imageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/fa5c2db8-930a-4ee9-b4e5-52a79a5f63a7.webp"
+    },
+    {
+      "id": "notice_939bacb5-54d9-4769-b003-e5a769d0a58b",
+      "start": "2026-11-05T11:03:00.000Z",
+      "end": "2026-11-12T11:04:00.000Z",
+      "role": "all",
+      "texts": {
+        "ar": {
+          "title": "as",
+          "body": "dasd"
+        }
+      },
+      "imageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/112318bf-a59d-4a32-a0cb-39184b646d18.webp"
     }
   ],
   "appearance": {
