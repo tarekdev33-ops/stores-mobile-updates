@@ -1,0 +1,1 @@
+b34f981d84eb830af30a7519adc18e99b6a2fb92ef627a3cc470148ea75eefe1  Stores-Mobile-0.8.7-build78-arm64.apk
