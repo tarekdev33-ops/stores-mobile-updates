@@ -2,6 +2,7 @@
 <style>:root{color-scheme:dark;font:16px system-ui;--teal:#4dcece}*{box-sizing:border-box}body{margin:0;background:#0e1921;color:#ecf5f7}main{max-width:1050px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:16px}h1{font-size:28px}h2{font-size:20px;color:var(--teal)}section{background:#1b2d39;border:1px solid #34515f;border-radius:18px;padding:22px;margin:20px 0}label{display:block;margin:14px 0 5px}input,textarea,select,button{font:inherit;border-radius:9px;padding:11px;border:1px solid #46616b;background:#101e29;color:inherit;max-width:100%}input,textarea,select{width:100%}textarea{min-height:100px}button{cursor:pointer;margin:5px 0;background:#4dcece;color:#092023;font-weight:650}button.secondary{background:transparent;color:#bfe9e6}button:disabled{opacity:.4;cursor:default}.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}.hint{color:#a8bec8;font-size:14px;line-height:1.8}#status{position:sticky;top:0;background:#0e1921;padding:10px;z-index:1;color:#6ae2ce;white-space:pre-wrap}.preview{border:1px dashed #4dcece;border-radius:12px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere}.toolbar{display:flex;gap:12px;flex-wrap:wrap}#token{direction:ltr}details{margin:14px 0}#list button{display:block;width:100%;text-align:right;background:#142430;color:white}.check{display:flex;align-items:center;gap:9px}.check input{width:auto}svg{width:70px;height:70px;stroke:var(--teal);fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.brand{display:flex;align-items:center;gap:14px}a{color:#6ae2ce}@media(max-width:620px){.row{grid-template-columns:1fr}main{padding:14px}section{padding:17px}h1{font-size:22px}header{display:block}}</style>
 <main><header><div class="brand"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M10 24V16Q10 10 16 10H24M76 10H84Q90 10 90 16V24M90 76V84Q90 90 84 90H76M24 90H16Q10 90 10 84V76M50 25L73 39V65L50 79L27 65V39ZM27 39L50 53L73 39M50 53V79"/></svg><div><h1>إدارة أخبار ستورز</h1><p class="hint">إعلانات ومناسبات تصل للتطبيق دون إصدار نسخة جديدة.</p></div></div></header><div id="status" role="status">جاري تحميل الإعدادات المنشورة…</div>
 <section><h2>اتصال النشر</h2><p class="hint">النشر متاح لصاحب مستودع <b dir="ltr">tarekdev33-ops/stores-mobile-updates</b> فقط. استخدم رمز GitHub محدوداً لهذا المستودع بصلاحية Contents: Read and write. الرمز يبقى في ذاكرة هذه الصفحة ولا يُحفظ. يمكنك استعمال اللوحة من حاسب آخر بإدخال رمزك. الإعلانات المنشورة عامة.</p><details><summary>إعدادات الرمز المطلوبة</summary><p class="hint">Resource owner: <b dir="ltr">tarekdev33-ops</b><br>Repository access: <b dir="ltr">Only select repositories → stores-mobile-updates</b><br>Repository permissions: <b dir="ltr">Contents → Read and write</b><br>إذا كان الرمز تابعاً لحساب آخر، يجب أن يملك ذلك الحساب صلاحية الكتابة إلى المستودع. لا ترسل الرمز لأي شخص.</p></details><label for="token">رمز النشر</label><input id="token" type="password" autocomplete="off" spellcheck="false"><div class="toolbar"><button id="connect">اتصال</button><button id="disconnect" class="secondary">قطع الاتصال</button><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">إنشاء رمز محدود في GitHub</a></div></section>
+<section><h2>نماذج الطباعة</h2><p class="hint">محرر pdfme للفواتير والسندات، A4 ورول 80 مم. صمّم ثم نزّل JSON أو انشر القالب، واستورده في التطبيق للطباعة محلياً دون اتصال. اتصل بحساب النشر أعلاه قبل النشر من المحرّر.</p><button type="button" id="openPrintDesigner">فتح محرّر نماذج الطباعة</button></section>
 <section><h2>الإعلانات</h2><div id="list"></div><button id="add">إعلان جديد</button><form id="notice"><input type="hidden" id="edit"><label for="title">العنوان بالعربية</label><input id="title" maxlength="100" required><label for="body">نص الإعلان</label><textarea id="body" maxlength="1500"></textarea><label for="noticeImage">صورة الإعلان (اختياري)</label><input id="noticeImage" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="removeNoticeImage" class="secondary">إزالة الصورة</button><img id="noticeImagePreview" alt="معاينة صورة الإعلان" hidden style="max-width:100%;max-height:240px"><details><summary>ترجمة إنجليزية اختيارية</summary><label for="titleEn">English title</label><input id="titleEn" maxlength="100"><label for="bodyEn">English message</label><textarea id="bodyEn" maxlength="1500"></textarea></details><div class="row"><div><label for="start">بداية العرض (بتوقيت جهازك)</label><input id="start" type="datetime-local" required></div><div><label for="end">نهاية العرض</label><input id="end" type="datetime-local" required></div></div><div class="row"><div><label for="role">الأجهزة المستهدفة</label><select id="role"><option value="all">الجميع</option><option value="local">الأجهزة المحلية</option><option value="primary">الأجهزة الرئيسية</option><option value="terminal">الأجهزة الطرفية</option></select></div><div><label for="url">رابط التفاصيل (اختياري، HTTPS)</label><input id="url" type="url" dir="ltr"></div></div><div class="row"><div><label for="minVersion">أقدم إصدار (اختياري)</label><input id="minVersion" placeholder="0.7.8" dir="ltr"></div><div><label for="maxVersion">أحدث إصدار (اختياري)</label><input id="maxVersion" placeholder="0.7.8" dir="ltr"></div></div><h3>معاينة الإعلان</h3><div class="preview" id="preview"></div><div class="toolbar"><button type="submit">حفظ في المسودة</button><button id="delete" type="button" class="secondary">حذف الإعلان من المسودة</button></div></form></section>
 <section><h2>مظهر المناسبة</h2><div class="row"><div><label for="brandMode">نوع التغيير</label><select id="brandMode"><option value="color">لون واحد</option><option value="image">صورة داخل الشكل الأصلي</option></select></div><div><label for="brandTarget">تطبيق على</label><select id="brandTarget"><option value="icon">اللوغو فقط</option><option value="name">اسم التطبيق فقط</option><option value="both">اللوغو واسم التطبيق</option></select></div></div><label class="check"><input id="appearance" type="checkbox">تفعيل مظهر مؤقت للشعار داخل التطبيق</label><div class="row"><div><label for="color">لون الأيقونة</label><input id="color" type="color" value="#4dcece"></div><div><label for="decoration">زينة الشعار</label><select id="decoration"><option value="none">بدون زينة</option><option value="sparkles">نجوم</option><option value="crescent">هلال</option><option value="gift">هدية</option></select></div></div><div class="row"><div><label for="textColor">لون اسم Stores</label><input id="textColor" type="color" value="#edf2f7"></div><div><label class="check"><input id="motion" type="checkbox" checked>تفاعل الزينة مع ميل الجهاز وهزّه</label></div></div>
 <div class="row"><div><label for="iconImage">صورة ألوان الأيقونة (اختياري)</label><input id="iconImage" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="removeIconImage" class="secondary">إزالة صورة الأيقونة</button></div><div><label for="nameImage">صورة ألوان اسم Stores (اختياري)</label><input id="nameImage" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="removeNameImage" class="secondary">إزالة صورة الاسم</button></div></div>
@@ -41,13 +42,13 @@ function githubError(r,data){
  return reason+(safe?'\nتفصيل GitHub: '+safe:'');
 }
 async function github(method,body,path='config.json'){
- if(path!=='config.json'&&!/^assets\/campaigns\/[a-zA-Z0-9_-]+\.webp$/.test(path))throw Error('مسار صورة غير صالح');
+ if(path!=='config.json'&&path!=='print-templates.json'&&!/^assets\/print-templates\/[a-zA-Z0-9_-]+\.json$/.test(path)&&!/^assets\/campaigns\/[a-zA-Z0-9_-]+\.webp$/.test(path))throw Error('مسار صورة غير صالح');
  const target='https://api.github.com/repos/'+repo+'/contents/'+path;
  let r;
  try{r=await fetch(target,{method,headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+auth,'X-GitHub-Api-Version':'2022-11-28',...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined})}
  catch(_){throw Error('لم يصل طلب المتصفح إلى GitHub. تحقق من الإنترنت أو حظر الاتصال في المتصفح والشبكة. هذا يختلف عن رفض الصلاحية403.')}
  const data=await r.json().catch(()=>({}));
- if(!r.ok)throw Error(githubError(r,data));
+ if(!r.ok){const error=Error(githubError(r,data));error.status=r.status;throw error;}
  return data;
 }
 function decode(s){return new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g,'')),c=>c.charCodeAt(0)))}function encode(s){let b=new TextEncoder().encode(s);return btoa(Array.from(b,c=>String.fromCharCode(c)).join(''))}
@@ -95,5 +96,31 @@ function brandOptions(){
 }
 $('brandMode').onchange=$('brandTarget').onchange=brandOptions;
 $('color').previousElementSibling.textContent='اللون';$('iconImage').previousElementSibling.textContent='صورة الألوان';brandOptions();
+
+let printPublishing=false;
+$('openPrintDesigner').onclick=()=>window.open('print-designer/','storesPrintDesigner');
+window.storesPrintPublisher={publish:async function(source){
+ if(!auth)throw Error('اتصل بحساب النشر من لوحة التحكم أولاً');
+ if(printPublishing)throw Error('جار نشر قالب آخر؛ انتظر');
+ if(typeof source!=='string'||new TextEncoder().encode(source).length>6*1024*1024)throw Error('حجم القالب غير صالح');
+ const template=JSON.parse(source),m=template.stores;
+ if(!m||m.schema!==1||!/^[a-zA-Z0-9_-]{1,80}$/.test(m.id)||!['sale','purchase','saleReturn','purchaseReturn','receipt','payment'].includes(m.kind)||!['a4','thermal80'].includes(m.paper)||typeof m.name!=='string'||!m.name.trim()||m.name.length>100)throw Error('بيانات قالب غير صالحة');
+ printPublishing=true;
+ try{
+  let catalog={schema:1,revision:0,templates:[]},catalogSha;
+  try{const file=await github('GET',undefined,'print-templates.json');catalog=JSON.parse(decode(file.content));catalogSha=file.sha;}
+  catch(e){if(e.status!==404)throw e;}
+  if(catalog.schema!==1||!Array.isArray(catalog.templates))throw Error('إصدار فهرس الطباعة غير صالح');
+  const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(source))),x=>x.toString(16).padStart(2,'0')).join('');
+  const path='assets/print-templates/'+crypto.randomUUID()+'.json';
+  await github('PUT',{message:'Publish Stores print template',branch:'main',content:encode(source)},path);
+  const next={...catalog,revision:(catalog.revision||0)+1,templates:catalog.templates.filter(t=>t.id!==m.id)};
+  next.templates.push({id:m.id,name:m.name,kind:m.kind,paper:m.paper,path,sha256:hash,updatedAt:new Date().toISOString()});
+  if(next.templates.length>100)throw Error('الحد الأقصى 100 قالب منشور');
+  await github('PUT',{message:'Update Stores print template catalog',branch:'main',...(catalogSha?{sha:catalogSha}:{}),content:encode(JSON.stringify(next,null,2)+'\n')},'print-templates.json');
+  return 'المراجعة '+next.revision;
+ }finally{printPublishing=false;}
+}};
+
 fresh();dates('appearance');fetch('config.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(s=>{load(s);status('الإعدادات المنشورة جاهزة. اتصل بحساب النشر لإجراء تعديل.')}).catch(()=>status('يمكن تجهيز مسودة. اتصل بحساب النشر لتحميل آخر نسخة.'));
 </script></html>
