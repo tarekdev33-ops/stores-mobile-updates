@@ -1,0 +1,1334 @@
+{
+  "schemas": [
+    [
+      {
+        "name": "company.name",
+        "type": "text",
+        "content": "اسم المنشأة",
+        "position": {
+          "x": 2.5,
+          "y": 4.6
+        },
+        "width": 85.47,
+        "height": 7,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 14,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 14,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "company_tagline",
+        "type": "text",
+        "content": "لانتاج كافة أنواع الضيافات",
+        "position": {
+          "x": 2.5,
+          "y": 11.8
+        },
+        "width": 85.47,
+        "height": 5,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 10.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "company.address",
+        "type": "text",
+        "content": "عنوان المنشأة",
+        "position": {
+          "x": 2.5,
+          "y": 17.1
+        },
+        "width": 85.47,
+        "height": 5.3,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 9.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 9.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "company.phone",
+        "type": "text",
+        "content": "رقم الهاتف",
+        "position": {
+          "x": 2.5,
+          "y": 23
+        },
+        "width": 85.47,
+        "height": 5.3,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "document.date",
+        "type": "text",
+        "content": "09/11/2026",
+        "position": {
+          "x": 12.813,
+          "y": 30.025
+        },
+        "width": 38.289,
+        "height": 6.1,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "date_label",
+        "type": "text",
+        "content": "التاريخ",
+        "position": {
+          "x": 51.102,
+          "y": 30.025
+        },
+        "width": 13.479,
+        "height": 6.1,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 9,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 9,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "document.title",
+        "type": "text",
+        "content": "فاتورة مبيع",
+        "position": {
+          "x": 64.581,
+          "y": 30.025
+        },
+        "width": 86.621,
+        "height": 6.1,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 11,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 11,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "document.payment",
+        "type": "text",
+        "content": "نقداً",
+        "position": {
+          "x": 151.202,
+          "y": 30.025
+        },
+        "width": 12.88,
+        "height": 6.1,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "document.number",
+        "type": "text",
+        "content": "123",
+        "position": {
+          "x": 164.082,
+          "y": 30.025
+        },
+        "width": 12.792,
+        "height": 6.1,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "number_label",
+        "type": "text",
+        "content": "رقم الفاتورة",
+        "position": {
+          "x": 176.874,
+          "y": 30.025
+        },
+        "width": 24.591,
+        "height": 6.1,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 9,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 9,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "party.name",
+        "type": "text",
+        "content": "عميل تجريبي",
+        "position": {
+          "x": 98,
+          "y": 38.8
+        },
+        "width": 52.5,
+        "height": 6.3,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "party_label",
+        "type": "text",
+        "content": "المطلوب من السيد المحترم:",
+        "position": {
+          "x": 151.2,
+          "y": 38.8
+        },
+        "width": 50.25,
+        "height": 6.3,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "party.account",
+        "type": "text",
+        "content": "1211",
+        "position": {
+          "x": 12.56,
+          "y": 38.8
+        },
+        "width": 43.5,
+        "height": 6.3,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "account_label",
+        "type": "text",
+        "content": "حساب العميل:",
+        "position": {
+          "x": 57,
+          "y": 38.8
+        },
+        "width": 37,
+        "height": 6.3,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontSize": 10,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 10,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "lines",
+        "type": "table",
+        "position": {
+          "x": 12.56,
+          "y": 46
+        },
+        "width": 190.48,
+        "height": 13,
+        "content": "[[\"0.00 USD\",\"\",\"10.00 USD\",\"قطعة\",\"2\",\"صنف تجريبي\",\"1\",\"20.00 USD\"]]",
+        "showHead": true,
+        "repeatHead": true,
+        "head": [
+          "الحسم",
+          "المواصفات",
+          "السعر",
+          "الوحدة",
+          "الكمية",
+          "المادة",
+          "رقم المادة",
+          "الإجمالي"
+        ],
+        "headWidthPercentages": [
+          11.528769424611509,
+          20.238345233095338,
+          10.877782444351112,
+          6.352372952540949,
+          6.352372952540949,
+          22.637547249055018,
+          7.166106677866443,
+          14.846703065938682
+        ],
+        "tableStyles": {
+          "borderColor": "#000000",
+          "borderWidth": 0.15
+        },
+        "headStyles": {
+          "fontName": "Cairo",
+          "alignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": 9,
+          "lineHeight": 1,
+          "characterSpacing": 0,
+          "fontColor": "#000000",
+          "backgroundColor": "#BFBFBF",
+          "borderColor": "#000000",
+          "borderWidth": {
+            "top": 0.15,
+            "right": 0.15,
+            "bottom": 0.15,
+            "left": 0.15
+          },
+          "padding": {
+            "top": 0.8,
+            "right": 0.6,
+            "bottom": 0.8,
+            "left": 0.6
+          }
+        },
+        "bodyStyles": {
+          "fontName": "Cairo",
+          "alignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": 8.5,
+          "lineHeight": 1,
+          "characterSpacing": 0,
+          "fontColor": "#000000",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#000000",
+          "borderWidth": {
+            "top": 0.15,
+            "right": 0.15,
+            "bottom": 0.15,
+            "left": 0.15
+          },
+          "padding": {
+            "top": 0.8,
+            "right": 0.6,
+            "bottom": 0.8,
+            "left": 0.6
+          },
+          "alternateBackgroundColor": "#FFFFFF"
+        },
+        "columnStyles": {
+          "alignment": {
+            "1": "right",
+            "5": "right"
+          }
+        },
+        "readOnly": false
+      },
+      {
+        "name": "totals.grand",
+        "type": "text",
+        "content": "0.00 USD",
+        "position": {
+          "x": 145.28,
+          "y": 63
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "label_totals.grand",
+        "type": "text",
+        "content": "إجمالي الفاتورة",
+        "position": {
+          "x": 173.18,
+          "y": 63
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "totals.net",
+        "type": "text",
+        "content": "0.00 USD",
+        "position": {
+          "x": 145.28,
+          "y": 71
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "label_totals.net",
+        "type": "text",
+        "content": "الصافي قبل الضريبة",
+        "position": {
+          "x": 173.18,
+          "y": 71
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "totals.subtotal",
+        "type": "text",
+        "content": "0.00 USD",
+        "position": {
+          "x": 145.28,
+          "y": 79
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "label_totals.subtotal",
+        "type": "text",
+        "content": "قبل الحسم",
+        "position": {
+          "x": 173.18,
+          "y": 79
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "totals.discount",
+        "type": "text",
+        "content": "0.00 USD",
+        "position": {
+          "x": 12.56,
+          "y": 63
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "label_totals.discount",
+        "type": "text",
+        "content": "الحسم",
+        "position": {
+          "x": 40.46,
+          "y": 63
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "totals.tax",
+        "type": "text",
+        "content": "0.00 USD",
+        "position": {
+          "x": 12.56,
+          "y": 71
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "label_totals.tax",
+        "type": "text",
+        "content": "الضريبة",
+        "position": {
+          "x": 40.46,
+          "y": 71
+        },
+        "width": 27.9,
+        "height": 6.2,
+        "rotate": 0,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": 8.5,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 8.5,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "#BFBFBF",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0.15,
+          "right": 0.15,
+          "bottom": 0.15,
+          "left": 0.15
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "notes_label",
+        "type": "text",
+        "content": "ملاحظات الفاتورة:",
+        "position": {
+          "x": 12.56,
+          "y": 80
+        },
+        "width": 114,
+        "height": 5,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontSize": 9,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 9,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      },
+      {
+        "name": "document.notes",
+        "type": "text",
+        "content": "",
+        "position": {
+          "x": 12.56,
+          "y": 86
+        },
+        "width": 114,
+        "height": 13,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontSize": 9,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": false
+      },
+      {
+        "name": "sales_capacity",
+        "type": "text",
+        "content": "صفة البيع من المنتج الى بائع المفرق",
+        "position": {
+          "x": 134,
+          "y": 90
+        },
+        "width": 67.46,
+        "height": 8,
+        "rotate": 0,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "fontSize": 9,
+        "textFormat": "plain",
+        "overflow": "expand",
+        "fontVariantFallback": "synthetic",
+        "lineHeight": 1,
+        "characterSpacing": 0,
+        "dynamicFontSize": {
+          "min": 7,
+          "max": 9,
+          "fit": "horizontal"
+        },
+        "fontColor": "#000000",
+        "fontName": "Cairo",
+        "backgroundColor": "",
+        "borderColor": "#000000",
+        "borderWidth": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "padding": {
+          "top": 0.25,
+          "right": 0.6,
+          "bottom": 0.25,
+          "left": 0.6
+        },
+        "opacity": 1,
+        "strikethrough": false,
+        "underline": false,
+        "readOnly": true
+      }
+    ]
+  ],
+  "basePdf": {
+    "width": 210,
+    "height": 297,
+    "padding": [
+      4,
+      7,
+      12,
+      12.56
+    ]
+  },
+  "stores": {
+    "schema": 1,
+    "id": "stores-sale-a4-import-v1",
+    "name": "قالب فاتورة مبيع A4",
+    "kind": "sale",
+    "paper": "a4",
+    "columns": [
+      "discount",
+      "specifications",
+      "price",
+      "unit",
+      "quantity",
+      "name",
+      "code",
+      "total"
+    ]
+  }
+}
