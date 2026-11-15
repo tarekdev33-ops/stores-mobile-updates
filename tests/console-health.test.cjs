@@ -9,4 +9,6 @@ assert.equal(sandbox.deliveryStatus({...valid,end:'2026-11-12T00:00:00Z'},'0.8.9
 assert.equal(sandbox.deliveryStatus({...valid,maxVersion:'0.8.5'},'0.8.9','local',now),'النسخة الحالية خارج الحد الأعلى');
 assert.equal(sandbox.deliveryStatus({...valid,role:'terminal'},'0.8.9','local',now),'مخصص لنوع جهاز آخر');
 assert.throws(()=>sandbox.versionParts('0.8.9+96'));
-console.log('5 console delivery checks passed; all embedded JavaScript parses.');
+assert.equal(sandbox.deliveryStatus(valid,'0.9.0','local',now),'جاهز للعرض');
+assert.equal(sandbox.deliveryStatus({...valid,maxVersion:'0.8.9'},'0.9.0','local',now),'النسخة الحالية خارج الحد الأعلى');
+console.log('7 console delivery checks passed; all embedded JavaScript parses.');
