@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync('index.html','utf8');
+for(const match of source.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g))new vm.Script(match[1]);
+const functions=source.slice(source.indexOf('function versionParts('),source.indexOf('function renderDeliveryHealth('));
+const sandbox={Date};vm.createContext(sandbox);vm.runInContext(functions,sandbox);
+const valid={start:'2026-11-14T00:00:00Z',end:'2026-11-20T00:00:00Z',role:'all'},now=Date.parse('2026-11-15T12:00:00Z');
+assert.equal(sandbox.deliveryStatus(valid,'0.8.9','local',now),'جاهز للعرض');
+assert.equal(sandbox.deliveryStatus({...valid,end:'2026-11-12T00:00:00Z'},'0.8.9','local',now),'انتهت مدة العرض');
+assert.equal(sandbox.deliveryStatus({...valid,maxVersion:'0.8.5'},'0.8.9','local',now),'النسخة الحالية خارج الحد الأعلى');
+assert.equal(sandbox.deliveryStatus({...valid,role:'terminal'},'0.8.9','local',now),'مخصص لنوع جهاز آخر');
+assert.throws(()=>sandbox.versionParts('0.8.9+96'));
+console.log('5 console delivery checks passed; all embedded JavaScript parses.');
