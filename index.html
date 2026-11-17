@@ -1,14 +1,14 @@
 <!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>إدارة أخبار ستورز</title>
 <style>[hidden]{display:none!important}:root{color-scheme:dark;font:16px system-ui;--teal:#4dcece}*{box-sizing:border-box}body{margin:0;background:#0e1921;color:#ecf5f7}main{max-width:1050px;margin:auto;padding:24px}header{display:flex;justify-content:space-between;align-items:center;gap:16px}h1{font-size:28px}h2{font-size:20px;color:var(--teal)}section{background:#1b2d39;border:1px solid #34515f;border-radius:18px;padding:22px;margin:20px 0}label{display:block;margin:14px 0 5px}input,textarea,select,button{font:inherit;border-radius:9px;padding:11px;border:1px solid #46616b;background:#101e29;color:inherit;max-width:100%}input,textarea,select{width:100%}textarea{min-height:100px}button{cursor:pointer;margin:5px 0;background:#4dcece;color:#092023;font-weight:650}button.secondary{background:transparent;color:#bfe9e6}button:disabled{opacity:.4;cursor:default}.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}.hint{color:#a8bec8;font-size:14px;line-height:1.8}#status{position:sticky;top:0;background:#0e1921;padding:10px;z-index:1;color:#6ae2ce;white-space:pre-wrap}.preview{border:1px dashed #4dcece;border-radius:12px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere}.toolbar{display:flex;gap:12px;flex-wrap:wrap}#token{direction:ltr}details{margin:14px 0}#list button{display:block;width:100%;text-align:right;background:#142430;color:white}.check{display:flex;align-items:center;gap:9px}.check input{width:auto}svg{width:70px;height:70px;stroke:var(--teal);fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.brand{display:flex;align-items:center;gap:14px}a{color:#6ae2ce}@media(max-width:620px){.row{grid-template-columns:1fr}main{padding:14px}section{padding:17px}h1{font-size:22px}header{display:block}}</style>
 <main><header><div class="brand"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M10 24V16Q10 10 16 10H24M76 10H84Q90 10 90 16V24M90 76V84Q90 90 84 90H76M24 90H16Q10 90 10 84V76M50 25L73 39V65L50 79L27 65V39ZM27 39L50 53L73 39M50 53V79"/></svg><div><h1>إدارة أخبار ستورز</h1><p class="hint">إعلانات ومناسبات تصل للتطبيق دون إصدار نسخة جديدة.</p></div></div></header><div id="status" role="status">جاري تحميل الإعدادات المنشورة…</div>
-<section><h2>اتصال النشر</h2><p class="hint">النشر متاح لصاحب مستودع <b dir="ltr">tarekdev33-ops/stores-mobile-updates</b> فقط. استخدم رمز GitHub محدوداً لهذا المستودع بصلاحية Contents: Read and write. يُحفظ الرمز محلياً على هذا المتصفح بعد نجاح الاتصال، وتستخدمه اللوحة تلقائياً عند فتحها. يمكنك مسحه بزر قطع الاتصال، وتحتاج إدخاله مرة واحدة في كل متصفح أو جهاز جديد. الإعلانات المنشورة عامة.</p><details><summary>إعدادات الرمز المطلوبة</summary><p class="hint">Resource owner: <b dir="ltr">tarekdev33-ops</b><br>Repository access: <b dir="ltr">Only select repositories → stores-mobile-updates</b><br>Repository permissions: <b dir="ltr">Contents → Read and write</b><br>إذا كان الرمز تابعاً لحساب آخر، يجب أن يملك ذلك الحساب صلاحية الكتابة إلى المستودع. لا ترسل الرمز لأي شخص.</p></details><p id="connectionState" class="hint" aria-live="polite">غير متصل</p><label id="tokenLabel" for="token">رمز النشر — أول اتصال</label><input id="token" type="password" maxlength="1024" autocomplete="off" spellcheck="false"><div class="toolbar"><button id="connect">اتصال</button><button id="disconnect" class="secondary">قطع الاتصال ومسح الرمز المحفوظ</button><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">إنشاء رمز محدود في GitHub</a></div></section>
+<section><h2>اتصال النشر</h2><p class="hint">النشر يتطلب صلاحية الكتابة إلى مستودع <b dir="ltr">tarekdev33-ops/stores-mobile-updates</b>. استخدم رمز GitHub محدوداً لهذا المستودع بصلاحية Contents: Read and write. يُحفظ الرمز محلياً على هذا المتصفح بعد نجاح الاتصال، وتستخدمه اللوحة تلقائياً عند فتحها. يمكنك مسحه بزر قطع الاتصال، وتحتاج إدخاله مرة واحدة في كل متصفح أو جهاز جديد. الإعلانات المنشورة عامة.</p><details><summary>إعدادات الرمز المطلوبة</summary><p class="hint">Resource owner: <b dir="ltr">tarekdev33-ops</b><br>Repository access: <b dir="ltr">Only select repositories → stores-mobile-updates</b><br>Repository permissions: <b dir="ltr">Contents → Read and write</b><br>أنشئ الرمز المحدود من حساب مالك المستودع؛ رموز المتعاونين المحدودة لا تدعم الكتابة هنا. القراءة العامة وحدها لا تثبت صلاحية النشر. لا ترسل الرمز لأي شخص.</p></details><p id="connectionState" class="hint" aria-live="polite">غير متصل</p><label id="tokenLabel" for="token">رمز النشر — أول اتصال</label><input id="token" type="password" maxlength="1024" autocomplete="off" spellcheck="false"><div class="toolbar"><button id="connect">اتصال</button><button id="disconnect" class="secondary">قطع الاتصال ومسح الرمز المحفوظ</button><a href="https://github.com/settings/personal-access-tokens/new?target_name=tarekdev33-ops&amp;name=Stores+news+publisher&amp;contents=write" target="_blank" rel="noopener noreferrer">إنشاء رمز محدود في GitHub</a></div></section>
 <section><h2>نماذج الطباعة</h2><p class="hint">محرر pdfme للفواتير والسندات، A4 ورول 80 مم. صمّم ثم نزّل JSON أو انشر القالب، واستورده في التطبيق للطباعة محلياً دون اتصال. اتصل بحساب النشر أعلاه قبل النشر من المحرّر.</p><button type="button" id="openPrintDesigner">فتح محرّر نماذج الطباعة</button></section>
 <section><h2>الإعلانات</h2><div id="list"></div><button id="add">إعلان جديد</button><form id="notice"><input type="hidden" id="edit"><label for="title">العنوان بالعربية</label><input id="title" maxlength="100" required><label for="body">نص الإعلان</label><textarea id="body" maxlength="1500"></textarea><label for="noticeImage">صورة الإعلان (اختياري)</label><input id="noticeImage" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="removeNoticeImage" class="secondary">إزالة الصورة</button><img id="noticeImagePreview" alt="معاينة صورة الإعلان" hidden style="max-width:100%;max-height:240px"><details><summary>ترجمة إنجليزية اختيارية</summary><label for="titleEn">English title</label><input id="titleEn" maxlength="100"><label for="bodyEn">English message</label><textarea id="bodyEn" maxlength="1500"></textarea></details><div class="row"><div><label for="start">بداية العرض (بتوقيت جهازك)</label><input id="start" type="datetime-local" required></div><div><label for="end">نهاية العرض</label><input id="end" type="datetime-local" required></div></div><div class="row"><div><label for="role">الأجهزة المستهدفة</label><select id="role"><option value="all">الجميع</option><option value="local">الأجهزة المحلية</option><option value="primary">الأجهزة الرئيسية</option><option value="terminal">الأجهزة الطرفية</option></select></div><div><label for="url">رابط التفاصيل (اختياري، HTTPS)</label><input id="url" type="url" dir="ltr"></div></div><div class="row"><div><label for="minVersion">أقدم إصدار (اختياري)</label><input id="minVersion" placeholder="0.9.0" dir="ltr"></div><div><label for="maxVersion">أحدث إصدار (اختياري)</label><input id="maxVersion" placeholder="0.9.0" dir="ltr"></div></div><h3>معاينة الإعلان</h3><div class="preview" id="preview"></div><div class="toolbar"><button type="submit">حفظ في المسودة</button><button id="delete" type="button" class="secondary">حذف الإعلان من المسودة</button></div></form></section>
 <section><h2>مظهر المناسبة</h2><div class="row"><div><label for="brandMode">نوع التغيير</label><select id="brandMode"><option value="color">لون واحد</option><option value="image">صورة داخل الشكل الأصلي</option></select></div><div><label for="brandTarget">تطبيق على</label><select id="brandTarget"><option value="icon">اللوغو فقط</option><option value="name">اسم التطبيق فقط</option><option value="both">اللوغو واسم التطبيق</option></select></div></div><label class="check"><input id="appearance" type="checkbox">تفعيل مظهر مؤقت للشعار داخل التطبيق</label><div class="row"><div><label for="color">لون الأيقونة</label><input id="color" type="color" value="#4dcece"></div><div><label for="decoration">زينة الشعار</label><select id="decoration"><option value="none">بدون زينة</option><option value="sparkles">نجوم</option><option value="crescent">هلال</option><option value="gift">هدية</option></select></div></div><div class="row"><div><label for="textColor">لون اسم Stores</label><input id="textColor" type="color" value="#edf2f7"></div><div><label class="check"><input id="motion" type="checkbox" checked>تفاعل الزينة مع ميل الجهاز وهزّه</label></div></div>
 <div class="row"><div><label for="iconImage">صورة ألوان الأيقونة (اختياري)</label><input id="iconImage" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="removeIconImage" class="secondary">إزالة صورة الأيقونة</button></div><div><label for="nameImage">صورة ألوان اسم Stores (اختياري)</label><input id="nameImage" type="file" accept="image/png,image/jpeg,image/webp"><button type="button" id="removeNameImage" class="secondary">إزالة صورة الاسم</button></div></div>
 <div id="brandPreview" class="preview" style="display:flex;align-items:center;gap:14px;direction:ltr;min-height:100px"><strong id="namePreview" style="font:800 38px sans-serif">Stores</strong><span id="iconPreview"></span></div><p class="hint">تُطبع ألوان الصورة داخل شكل الأيقونة وحروف Stores الأصلية. الزينة خلف محتوى الترويسة فقط، بخفة، دون تحريك النصوص والأزرار. الصور تُرفع عند النشر؛ تحتاج هذه المزايا إصدار 0.8.5 أو أحدث.</p>
 <div class="row"><div><label for="appearanceStart">البداية</label><input id="appearanceStart" type="datetime-local"></div><div><label for="appearanceEnd">النهاية</label><input id="appearanceEnd" type="datetime-local"></div></div><button id="saveAppearance">حفظ المظهر في المسودة</button><p class="hint">يعود الشعار تلقائياً إلى مظهره الأساسي عند انتهاء المدة، حتى إذا كان الجهاز دون إنترنت.</p></section>
-<section aria-labelledby="delivery-health-title"><h2 id="delivery-health-title">هل سيظهر المحتوى على النسخة الحالية؟</h2><p class="hint">Firebase ينبه الهاتف لإعادة جلب المحتوى. ظهور الإعلان أو المظهر يعتمد أيضاً على تاريخ العرض والإصدار ونوع الجهاز. تعديل المسودة لا يغيّر المحتوى المنشور حتى تنشرها.</p><div class="row"><div><label for="targetVersion">الإصدار المراد فحصه</label><input id="targetVersion" value="0.9.0" dir="ltr"></div><div><label for="targetRole">نوع الجهاز للمعاينة</label><select id="targetRole"><option value="local">محلي</option><option value="primary">رئيسي</option><option value="terminal">طرفي</option></select></div></div><div id="deliveryHealth" role="status" aria-live="polite"></div></section><section><h2>نشر التغييرات</h2><p class="hint">الحفظ في المسودة لا يرسل شيئاً. زر النشر يحدّث ملف الإعلانات العام. قد يستغرق تحديث الاستضافة بضع دقائق، ثم يجلب التطبيق الإعداد عند فتحه أو أثناء استخدامه. تحتاج الأجهزة نسخة ستورز التي تدعم أخبار التطبيق.</p><div class="toolbar"><button id="publish" disabled>نشر المسودة</button><button id="export" class="secondary">تنزيل نسخة من المسودة</button></div><details><summary>عرض بيانات المسودة</summary><pre id="json" dir="ltr" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre></details></section>
+<section aria-labelledby="delivery-health-title"><h2 id="delivery-health-title">هل سيظهر المحتوى على النسخة الحالية؟</h2><p class="hint">Firebase ينبه الهاتف لإعادة جلب المحتوى. ظهور الإعلان أو المظهر يعتمد أيضاً على تاريخ العرض والإصدار ونوع الجهاز. تعديل المسودة لا يغيّر المحتوى المنشور حتى تنشرها.</p><div class="row"><div><label for="targetVersion">الإصدار المراد فحصه</label><input id="targetVersion" value="0.9.0" dir="ltr"></div><div><label for="targetRole">نوع الجهاز للمعاينة</label><select id="targetRole"><option value="local">محلي</option><option value="primary">رئيسي</option><option value="terminal">طرفي</option></select></div></div><div id="deliveryHealth" role="status" aria-live="polite"></div></section><section><h2>نشر التغييرات</h2><p class="hint">الحفظ في المسودة لا يرسل شيئاً. زر النشر يحدّث ملف الإعلانات العام. قد يستغرق تحديث الاستضافة بضع دقائق، ثم يجلب التطبيق الإعداد عند فتحه أو أثناء استخدامه. تحتاج الأجهزة نسخة ستورز التي تدعم أخبار التطبيق.</p><div class="toolbar"><button id="publish" disabled>نشر المسودة</button><button id="export" class="secondary">تنزيل نسخة من المسودة</button><button id="reloadPublished" class="secondary" hidden>تحميل المنشور وبدء مسودة جديدة</button></div><p id="conflictHint" class="hint" hidden>تغير المنشور. احفظ حقول التحرير في المسودة أو انسخها أولاً؛ التنزيل يشمل المسودة المحفوظة فقط. نزّلها واحتفظ بملفات الصور الأصلية قبل تحميل المنشور، الذي يستبدل المسودة وحقولها.</p><details><summary>عرض بيانات المسودة</summary><pre id="json" dir="ltr" style="white-space:pre-wrap;overflow-wrap:anywhere"></pre></details></section>
 <section><h2>إشعارات الهاتف</h2><p class="hint">الإعلانات داخل التطبيق مستقلة عن إشعارات شريط الهاتف. الإشعارات والتطبيق مغلق تحتاج ربط مشروع Firebase أولاً. بعد الربط يمكن إرسالها من Firebase Console إلى الموضوع <b dir="ltr">stores_mobile</b> للجميع، أو إضافة <b dir="ltr">_primary</b> / <b dir="ltr">_terminal</b> / <b dir="ltr">_local</b> لنوع جهاز معين. أرسل رسالة Notification وافتح التطبيق لرؤية أخبار ستورز.</p></section></main>
 <script>
 const $=id=>document.getElementById(id),repo='tarekdev33-ops/stores-mobile-updates',api='https://api.github.com/repos/'+repo+'/contents/config.json';let state={schema:1,revision:1,validUntil:new Date(Date.now()+365*864e5).toISOString(),notices:[],appearance:null},sha=null,auth='',noticeImageUrl='',iconImageUrl='',nameImageUrl='';const uploads=new Map();
@@ -45,38 +45,69 @@ $('notice').onsubmit=e=>{e.preventDefault();try{let i=$('edit').value,old=i===''
 $('delete').onclick=()=>{if($('edit').value!==''){state.notices.splice(Number($('edit').value),1);fresh();update();status('حُذف من المسودة. يلزم النشر لتطبيق الحذف.')}};
 $('saveAppearance').onclick=()=>{try{state.appearance=$('appearance').checked?{...windowFields($('appearanceStart').value,$('appearanceEnd').value,'all'),...selectedBrand(),brandMode:$('brandMode').value,brandTarget:$('brandTarget').value,decoration:$('decoration').value,motion:$('motion').checked}:null;update();status('حُفظ المظهر في المسودة.')}catch(e){status(e.message)}};
 $('title').oninput=$('body').oninput=preview;$('add').onclick=fresh;
-function githubError(r,data){
- const message=typeof data?.message==='string'?data.message:'';
- const lower=message.toLowerCase();
+function githubFailureKind(r,data){
+ const lower=(typeof data?.message==='string'?data.message:'').toLowerCase();
+ if(r.status===401)return 'credential';
+ if(r.status!==403)return 'other';
+ if(r.headers.get('x-ratelimit-remaining')==='0'||r.headers.get('retry-after')||lower.includes('rate limit')||lower.includes('abuse'))return 'rate';
+ if(r.headers.get('x-github-sso')||lower.includes('saml')||lower.includes('sso'))return 'sso';
+ if(lower.includes('protected branch')||lower.includes('repository rule')||lower.includes('ruleset'))return 'protection';
+ if(lower.includes('resource not accessible by personal access token')||lower.includes('insufficient permission')||lower.includes('permission denied'))return 'credential';
+ return 'other';
+}
+function githubError(r,data,token=auth){
+ const message=typeof data?.message==='string'?data.message:'',kind=githubFailureKind(r,data);
  let reason;
  if(r.status===401)reason='رمز النشر غير صالح أو انتهت صلاحيته. أدخل رمزاً صالحاً ثم اتصل مجدداً.';
- else if(r.status===403&&(r.headers.get('x-ratelimit-remaining')==='0'||lower.includes('rate limit')||lower.includes('abuse')))
-   reason='وصلت طلبات GitHub إلى الحد المسموح. انتظر ثم أعد المحاولة؛ إنشاء رمز جديد ليس مطلوباً لهذا السبب.';
- else if(r.status===403&&(r.headers.get('x-github-sso')||lower.includes('saml')||lower.includes('sso')))reason='حساب المؤسسة يتطلب اعتماد رمز النشر عبر SSO قبل استعماله.';
- else if(r.status===403&&(lower.includes('protected branch')||lower.includes('repository rule')||lower.includes('ruleset')))
-   reason='قواعد حماية المستودع أو الفرع تمنع النشر المباشر. راجع قواعد main في GitHub.';
- else if(r.status===403)reason='GitHub رفض صلاحية الرمز (403). تحقق من Resource owner: tarekdev33-ops، واختيار مستودع stores-mobile-updates، وصلاحية Contents: Read and write. استخدام حاسب آخر بحد ذاته لا يمنع النشر.';
+ else if(kind==='rate')reason='وصلت طلبات GitHub إلى الحد المسموح. انتظر ثم أعد المحاولة؛ إنشاء رمز جديد ليس مطلوباً لهذا السبب.';
+ else if(kind==='sso')reason='حساب المؤسسة يتطلب اعتماد رمز النشر عبر SSO قبل استعماله.';
+ else if(kind==='protection')reason='قواعد حماية المستودع أو الفرع تمنع النشر المباشر. راجع قواعد main في GitHub.';
+ else if(r.status===403)reason='GitHub رفض صلاحية النشر (403). أنشئ الرمز من حساب مالك المستودع، واختر stores-mobile-updates وصلاحية Contents: Read and write. إذا عدّلت صلاحيات الرمز في GitHub، فأعد الاتصال بعد حفظها.';
  else if(r.status===404)reason='المستودع أو الملف غير متاح لهذا الرمز. راجع اختيار المستودع والمالك في إعدادات الرمز.';
  else if(r.status===409||r.status===422)reason='تعذر حفظ التعديل. ربما تغير الملف من جلسة أخرى أو منعت قواعد المستودع التعديل. احتفظ بمسودتك ثم راجع التفاصيل أدناه.';
  else reason='تعذر إكمال طلب GitHub ('+r.status+'). حاول مجدداً.';
- let safe=auth?message.replaceAll(auth,'[محجوب]'):message;
+ let safe=token?message.replaceAll(token,'[محجوب]'):message;
  safe=safe.replace(/\b(?:github_pat_|gh[pousr]_)[A-Za-z0-9_]+/g,'[محجوب]').slice(0,400);
  return reason+(safe?'\nتفصيل GitHub: '+safe:'');
 }
-async function github(method,body,path='config.json'){
- if(path!=='config.json'&&path!=='print-templates.json'&&!/^assets\/print-templates\/[a-zA-Z0-9_-]+\.json$/.test(path)&&!/^assets\/campaigns\/[a-zA-Z0-9_-]+\.webp$/.test(path))throw Error('مسار صورة غير صالح');
- const target='https://api.github.com/repos/'+repo+'/contents/'+path;
+function publisherSession(){return {generation:connectionGeneration,token:auth}}
+function sessionCurrent(session){return session.generation===connectionGeneration&&session.token===auth&&!!auth}
+function assertPublisherSession(session){if(!sessionCurrent(session)){const error=Error('تغير اتصال النشر؛ أعد الاتصال قبل المتابعة.');error.staleSession=true;throw error}}
+async function githubApi(method,endpoint,body,session=publisherSession()){
+ assertPublisherSession(session);
  let r;
- try{r=await fetch(target,{method,headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+auth,'X-GitHub-Api-Version':'2022-11-28',...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined})}
- catch(_){throw Error('لم يصل طلب المتصفح إلى GitHub. تحقق من الإنترنت أو حظر الاتصال في المتصفح والشبكة. هذا يختلف عن رفض الصلاحية403.')}
+ try{r=await fetch('https://api.github.com/repos/'+repo+'/'+endpoint,{method,cache:'no-store',headers:{Accept:'application/vnd.github+json',Authorization:'Bearer '+session.token,'X-GitHub-Api-Version':'2022-11-28',...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined})}
+ catch(_){assertPublisherSession(session);throw Error('لم يصل طلب المتصفح إلى GitHub. تحقق من الإنترنت أو حظر الاتصال في المتصفح والشبكة. هذا يختلف عن رفض الصلاحية403.')}
  const data=await r.json().catch(()=>({}));
- if(!r.ok){const error=Error(githubError(r,data));error.status=r.status;throw error;}
+ assertPublisherSession(session);
+ if(!r.ok){const error=Error(githubError(r,data,session.token));error.status=r.status;error.kind=githubFailureKind(r,data);throw error;}
  return data;
 }
+async function github(method,body,path='config.json',session=publisherSession()){
+ if(path!=='config.json'&&path!=='print-templates.json'&&!/^assets\/print-templates\/[a-zA-Z0-9_-]+\.json$/.test(path)&&!/^assets\/campaigns\/[a-zA-Z0-9_-]+\.webp$/.test(path))throw Error('مسار ملف غير صالح');
+ if(method!=='GET'&&!writeReady)throw Error('تحقق من صلاحية النشر بالاتصال أولاً.');
+ return githubApi(method,'contents/'+path+(method==='GET'?'?ref=main':''),body,session);
+}
+async function verifyPublisherWriteAccess(session){
+ // Recreate an identical tree to check Contents write without a commit or ref update.
+ const ref=await githubApi('GET','git/ref/heads/main',undefined,session);
+ const commit=await githubApi('GET','git/commits/'+ref.object.sha,undefined,session);
+ const tree=await githubApi('GET','git/trees/'+commit.tree.sha,undefined,session);
+ const entry=tree.tree.find(item=>item.path==='config.json'&&item.type==='blob');
+ if(!entry)throw Error('ملف config.json غير موجود في جذر main.');
+ const file=await githubApi('GET','contents/config.json?ref='+ref.object.sha,undefined,session);
+ if(file.sha!==entry.sha)throw Error('تعذر التحقق من نسخة الإعدادات. أعد الاتصال.');
+ const probe=await githubApi('POST','git/trees',{base_tree:commit.tree.sha,tree:[{path:entry.path,mode:entry.mode,type:entry.type,sha:entry.sha}]},session);
+ if(probe.sha!==commit.tree.sha)throw Error('لم يُرجع فحص الصلاحية شجرة مطابقة؛ توقف الاتصال دون نشر.');
+ return file;
+}
 function decode(s){return new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g,'')),c=>c.charCodeAt(0)))}function encode(s){let b=new TextEncoder().encode(s);return btoa(Array.from(b,c=>String.fromCharCode(c)).join(''))}
-function load(s){validate(s);state=s;update();if(s.appearance){$('appearance').checked=true;$('brandMode').value=s.appearance.brandMode||(s.appearance.iconImageUrl||s.appearance.nameImageUrl?'image':'color');$('brandTarget').value=s.appearance.brandTarget||(s.appearance.iconImageUrl&&s.appearance.nameImageUrl?'both':s.appearance.nameImageUrl?'name':'icon');$('textColor').value=s.appearance.textColor||'#edf2f7';$('motion').checked=s.appearance.motion!==false;iconImageUrl=s.appearance.iconImageUrl||'';nameImageUrl=s.appearance.nameImageUrl||'';$('color').value=s.appearance.color;$('decoration').value=s.appearance.decoration;$('appearanceStart').value=localDate(s.appearance.start);$('appearanceEnd').value=localDate(s.appearance.end)}brandOptions()}
+function load(s){validate(s);state=s;update();if(s.appearance){$('appearance').checked=true;$('brandMode').value=s.appearance.brandMode||(s.appearance.iconImageUrl||s.appearance.nameImageUrl?'image':'color');$('brandTarget').value=s.appearance.brandTarget||(s.appearance.iconImageUrl&&s.appearance.nameImageUrl?'both':s.appearance.nameImageUrl?'name':'icon');$('textColor').value=s.appearance.textColor||'#edf2f7';$('motion').checked=s.appearance.motion!==false;iconImageUrl=s.appearance.iconImageUrl||'';nameImageUrl=s.appearance.nameImageUrl||'';$('color').value=s.appearance.color;$('decoration').value=s.appearance.decoration;$('appearanceStart').value=localDate(s.appearance.start);$('appearanceEnd').value=localDate(s.appearance.end)}else{$('appearance').checked=false;iconImageUrl=nameImageUrl='';$('brandMode').value='color';$('brandTarget').value='icon';$('color').value='#4dcece';$('textColor').value='#edf2f7';$('decoration').value='none';$('motion').checked=true;dates('appearance')}brandOptions()}
 const publishTokenKey='stores.console.publish-token.v1';
-let connectionGeneration=0;
+let connectionGeneration=0,writeReady=false,publishing=false,baseSha=null,baseContent=null,pendingRemote=null,draftTouched=false;
+const initialDraftContent=JSON.stringify(state);
+const draftInputIds=new Set(['title','body','titleEn','bodyEn','start','end','role','url','minVersion','maxVersion','noticeImage','appearance','brandMode','brandTarget','color','decoration','textColor','motion','iconImage','nameImage','appearanceStart','appearanceEnd']);
+for(const type of ['input','change'])document.addEventListener(type,event=>{if(draftInputIds.has(event.target.id))draftTouched=true});
 function savedPublishToken(){try{return (localStorage.getItem(publishTokenKey)||'').trim()}catch(_){return ''}}
 function forgetPublishToken(){try{localStorage.removeItem(publishTokenKey);return true}catch(_){return false}}
 function rememberPublishToken(token){
@@ -87,40 +118,94 @@ function connectionUi(connected=false,remembered=false,connecting=false){
  for(const id of ['token','tokenLabel','connect'])$(id).hidden=connected;
  $('connect').disabled=connecting;
  $('connect').textContent=savedPublishToken()?'إعادة الاتصال بالرمز المحفوظ':'اتصال وحفظ الرمز';
- $('connectionState').textContent=connecting?'جار الاتصال…':connected?(remembered?'متصل • الرمز محفوظ على هذا المتصفح':'متصل لهذه الجلسة • تعذّر حفظ الرمز في المتصفح'):savedPublishToken()?'الرمز محفوظ • أعد الاتصال دون إدخاله مجدداً':'غير متصل';
+ $('connectionState').textContent=connecting?'جار فحص صلاحية النشر…':connected?(remembered?'متصل • صلاحية النشر متحققة • الرمز محفوظ على هذا المتصفح':'متصل لهذه الجلسة • صلاحية النشر متحققة • تعذّر حفظ الرمز'):savedPublishToken()?'الرمز محفوظ • أعد الاتصال للتحقق من صلاحية النشر':'غير متصل';
  $('disconnect').disabled=!auth&&!savedPublishToken();
+}
+function hasDraftChanges(){return draftTouched||uploads.size>0||JSON.stringify(state)!==(baseContent??initialDraftContent)}
+function acceptAnonymousFile(remote,generation){
+ if(generation!==connectionGeneration)return;
+ validate(remote);const dirty=hasDraftChanges();baseContent=JSON.stringify(remote);
+ if(dirty){status('احتُفظ بمسودتك وحقول تحريرك الحالية. اتصل للتحقق من صلاحية النشر.');return}
+ load(remote);status('الإعدادات المنشورة جاهزة. أدخل رمز النشر مرة واحدة للاتصال وحفظه في هذا المتصفح.');
+}
+function conflictUi(visible){$('reloadPublished').hidden=!visible;$('reloadPublished').disabled=false;$('conflictHint').hidden=!visible}
+function acceptPublisherFile(file,remote){
+ validate(remote);
+ const content=JSON.stringify(remote),sameBase=baseSha===file.sha||(baseContent!==null&&baseContent===content);
+ if(hasDraftChanges()&&!sameBase){pendingRemote={file,remote};sha=null;conflictUi(true);return false}
+ if(!sameBase){load(remote);draftTouched=false}
+ baseSha=sha=file.sha;baseContent=content;pendingRemote=null;conflictUi(false);return true;
+}
+function publisherFailure(error,session){
+ if(!sessionCurrent(session)||error.staleSession)return;
+ if(error.kind==='credential'){
+  ++connectionGeneration;auth='';sha=null;writeReady=false;publishing=false;
+  if(savedPublishToken()===session.token)forgetPublishToken();
+  $('token').value='';$('publish').disabled=true;connectionUi();
+  $('token').scrollIntoView({block:'center',behavior:'smooth'});$('token').focus({preventScroll:true});
+  status(error.message+'\nاحتُفظ بالمسودة والصور وحقول التحرير. أدخل رمزاً بصلاحية النشر ثم اتصل مجدداً.');
+ }else status(error.message);
 }
 async function connectPublisher(token,automatic=false){
  token=token.trim();
  if(!token){status('أدخل رمز النشر للاتصال أول مرة.');return}
- const generation=++connectionGeneration;
- auth=token;sha=null;$('token').value='';$('publish').disabled=true;
+ ++connectionGeneration;auth=token;sha=null;writeReady=false;publishing=false;
+ const session=publisherSession();$('token').value='';$('publish').disabled=true;
  connectionUi(false,false,true);
- status(automatic?'جار الاتصال تلقائياً بالرمز المحفوظ…':'جار التحقق من رمز النشر…');
+ status(automatic?'جار التحقق تلقائياً من صلاحية الرمز المحفوظ…':'جار فحص صلاحية النشر دون تغيير المحتوى…');
  try{
-  const file=await github('GET');
-  if(generation!==connectionGeneration)return;
-  load(JSON.parse(decode(file.content)));sha=file.sha;
+  const file=await verifyPublisherWriteAccess(session);
+  assertPublisherSession(session);
+  const ready=acceptPublisherFile(file,JSON.parse(decode(file.content)));
+  writeReady=true;
   const remembered=rememberPublishToken(token);
-  connectionUi(true,remembered);$('publish').disabled=false;
-  status(remembered?'تم الاتصال. الرمز محفوظ على هذا المتصفح وسيُستخدم تلقائياً عند فتح اللوحة.':'تم الاتصال، لكن المتصفح منع حفظ الرمز. اسمح بتخزين بيانات الموقع للحفاظ على الاتصال بعد إعادة فتحه.');
+  connectionUi(true,remembered);$('publish').disabled=!ready;
+  status(ready?(remembered?'تم التحقق من صلاحية النشر. الرمز محفوظ، واحتُفظ بأي مسودة وحقول تحرير حالية.':'تم التحقق من صلاحية النشر، لكن المتصفح منع حفظ الرمز. الاتصال متاح لهذه الجلسة.'): 'تغير المحتوى المنشور في جلسة أخرى. احتُفظ بمسودتك وصورك، وتوقف نشرها لحماية التعديل الأحدث. نزّل المسودة أولاً، ثم حمّل المنشور لبدء مسودة جديدة.');
  }catch(error){
-  if(generation!==connectionGeneration)return;
-  auth='';sha=null;
-  if(error.status===401&&savedPublishToken()===token)forgetPublishToken();
-  connectionUi();status(error.message);
+  if(!sessionCurrent(session)||error.staleSession)return;
+  if(error.kind==='credential'){publisherFailure(error,session);return}
+  auth='';sha=null;writeReady=false;connectionUi();status(error.message);
  }
 }
 $('connect').onclick=()=>connectPublisher($('token').value.trim()||savedPublishToken());
 $('token').addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();$('connect').click()}});
 function disconnectPublisher(fromAnotherTab=false){
- ++connectionGeneration;auth='';sha=null;$('token').value='';$('publish').disabled=true;
+ ++connectionGeneration;auth='';sha=null;writeReady=false;publishing=false;$('token').value='';$('publish').disabled=true;
  const forgotten=fromAnotherTab||forgetPublishToken();connectionUi();
- status(forgotten?'انقطع اتصال النشر ومُسح الرمز المحفوظ من هذا المتصفح.':'انقطع الاتصال، لكن تعذّر مسح الرمز المحفوظ؛ امسح بيانات الموقع من إعدادات المتصفح.');
+ status(forgotten?'انقطع اتصال النشر ومُسح الرمز المحفوظ. المسودة والصور باقية في هذه الصفحة.':'انقطع الاتصال، لكن تعذّر مسح الرمز المحفوظ؛ امسح بيانات الموقع من إعدادات المتصفح.');
 }
 $('disconnect').onclick=()=>disconnectPublisher();
 window.addEventListener('storage',event=>{if(event.key===publishTokenKey&&event.newValue===null)disconnectPublisher(true)});
-$('publish').onclick=async()=>{if(!auth||!sha)return;$('publish').disabled=true;try{let next=structuredClone(state);next.revision++;next.validUntil=new Date(Date.now()+365*864e5).toISOString();validate(next);await uploadReferenced(next);let f=await github('PUT',{message:'Publish Stores public campaigns revision '+next.revision,sha,branch:'main',content:encode(JSON.stringify(next,null,2)+'\n')});sha=f.content.sha;state=next;update();status('تم نشر المراجعة '+state.revision+'. انتظر تحديث الاستضافة لبضع دقائق.')}catch(e){status(e.message)}finally{$('publish').disabled=!auth||!sha}};
+$('reloadPublished').onclick=async()=>{
+ if(!auth||!writeReady)return;
+ const session=publisherSession();$('reloadPublished').disabled=true;
+ try{
+  const file=await github('GET',undefined,'config.json',session),remote=JSON.parse(decode(file.content));validate(remote);
+  assertPublisherSession(session);
+  for(const item of uploads.values())if(item.preview)URL.revokeObjectURL(item.preview);
+  uploads.clear();noticeImageUrl=iconImageUrl=nameImageUrl='';$('appearance').checked=false;
+  load(remote);fresh();draftTouched=false;baseSha=sha=file.sha;baseContent=JSON.stringify(remote);pendingRemote=null;
+  conflictUi(false);$('publish').disabled=false;status('حُمّل المحتوى المنشور. يمكنك إعداد مسودة جديدة.');
+ }catch(error){publisherFailure(error,session)}
+ finally{if(sessionCurrent(session))$('reloadPublished').disabled=false}
+};
+$('publish').onclick=async()=>{
+ if(!auth||!writeReady||!sha||publishing)return;
+ const session=publisherSession(),sourceSha=sha,draftContent=JSON.stringify(state);
+ publishing=true;$('publish').disabled=true;
+ try{
+  const next=structuredClone(state);next.revision++;next.validUntil=new Date(Date.now()+365*864e5).toISOString();validate(next);
+  await uploadReferenced(next,session);assertPublisherSession(session);
+  const file=await github('PUT',{message:'Publish Stores public campaigns revision '+next.revision,sha:sourceSha,branch:'main',content:encode(JSON.stringify(next,null,2)+'\n')},'config.json',session);
+  assertPublisherSession(session);
+  baseSha=sha=file.content.sha;baseContent=JSON.stringify(next);
+  state=JSON.stringify(state)===draftContent?next:{...state,revision:next.revision,validUntil:next.validUntil};
+  update();status('تم نشر المراجعة '+next.revision+'. انتظر تحديث الاستضافة لبضع دقائق.');
+ }catch(error){
+  if(sessionCurrent(session)&&(error.status===409||error.status===422)){sha=null;conflictUi(true);status(error.message+'\nاحتُفظ بمسودتك وصورك. نزّل المسودة ثم حمّل المنشور قبل إعادة التحرير.');}
+  else publisherFailure(error,session);
+ }finally{if(sessionCurrent(session)){publishing=false;$('publish').disabled=!writeReady||!sha}}
+};
 $('export').onclick=()=>{let a=document.createElement('a');let u=URL.createObjectURL(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}));a.href=u;a.download='stores-campaigns-draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)};
 
 function imageSource(url){return uploads.get(url)?.preview||url}
@@ -149,7 +234,7 @@ for(const [input,kind] of [['noticeImage','notice'],['iconImage','icon'],['nameI
  const url=await prepareImage($(input).files[0]);if(kind==='notice'){noticeImageUrl=url;imagePreview()}else if(kind==='icon')iconImageUrl=url;else nameImageUrl=url;brandPreview();status('الصورة جاهزة. احفظ في المسودة ثم انشر.');
  }catch(e){status(e.message)}finally{$(input).value=''}};
 $('removeNoticeImage').onclick=()=>{noticeImageUrl='';imagePreview()};$('removeIconImage').onclick=()=>{iconImageUrl='';nameImageUrl='';brandPreview()};$('removeNameImage').onclick=()=>{nameImageUrl='';brandPreview()};$('color').oninput=$('textColor').oninput=brandPreview;
-async function uploadReferenced(next){const refs=new Set(next.notices.map(n=>n.imageUrl));if(next.appearance){refs.add(next.appearance.iconImageUrl);refs.add(next.appearance.nameImageUrl)}for(const url of refs){const item=uploads.get(url);if(!item||item.uploaded)continue;status('جار رفع صورة الإعلان أو الشعار…');await github('PUT',{message:'Upload public Stores campaign artwork',branch:'main',content:item.content},item.path);item.uploaded=true}}
+async function uploadReferenced(next,session){assertPublisherSession(session);const refs=new Set(next.notices.map(n=>n.imageUrl));if(next.appearance){refs.add(next.appearance.iconImageUrl);refs.add(next.appearance.nameImageUrl)}for(const url of refs){const item=uploads.get(url);if(!item||item.uploaded)continue;status('جار رفع صورة الإعلان أو الشعار…');await github('PUT',{message:'Upload public Stores campaign artwork',branch:'main',content:item.content},item.path,session);assertPublisherSession(session);item.uploaded=true}}
 function selectedBrand(strict=true){
  const mode=$('brandMode').value,target=$('brandTarget').value,icon=target!=='name',name=target!=='icon',image=iconImageUrl||nameImageUrl;
  if(mode==='image'&&strict&&!image)throw Error('اختر صورة لتطبيقها داخل الشكل');
@@ -162,29 +247,33 @@ function brandOptions(){
 $('brandMode').onchange=$('brandTarget').onchange=brandOptions;
 $('color').previousElementSibling.textContent='اللون';$('iconImage').previousElementSibling.textContent='صورة الألوان';brandOptions();
 
-let printPublishing=false;
+let printPublishing=null;
 $('openPrintDesigner').onclick=()=>window.open('print-designer/','storesPrintDesigner');
 window.storesPrintPublisher={publish:async function(source){
- if(!auth)throw Error('اتصل بحساب النشر من لوحة التحكم أولاً');
- if(printPublishing)throw Error('جار نشر قالب آخر؛ انتظر');
+ if(!auth||!writeReady)throw Error('اتصل وتحقق من صلاحية النشر من لوحة التحكم أولاً');
+ if(printPublishing&&sessionCurrent(printPublishing))throw Error('جار نشر قالب آخر؛ انتظر');
+ const session=publisherSession();
  if(typeof source!=='string'||new TextEncoder().encode(source).length>6*1024*1024)throw Error('حجم القالب غير صالح');
  const template=JSON.parse(source),m=template.stores;
  if(!m||m.schema!==1||!/^[a-zA-Z0-9_-]{1,80}$/.test(m.id)||!['sale','purchase','saleReturn','purchaseReturn','receipt','payment'].includes(m.kind)||!['a4','thermal80'].includes(m.paper)||typeof m.name!=='string'||!m.name.trim()||m.name.length>100)throw Error('بيانات قالب غير صالحة');
- printPublishing=true;
+ printPublishing=session;
  try{
   let catalog={schema:1,revision:0,templates:[]},catalogSha;
-  try{const file=await github('GET',undefined,'print-templates.json');catalog=JSON.parse(decode(file.content));catalogSha=file.sha;}
+  try{const file=await github('GET',undefined,'print-templates.json',session);catalog=JSON.parse(decode(file.content));catalogSha=file.sha;}
   catch(e){if(e.status!==404)throw e;}
   if(catalog.schema!==1||!Array.isArray(catalog.templates))throw Error('إصدار فهرس الطباعة غير صالح');
   const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(source))),x=>x.toString(16).padStart(2,'0')).join('');
+  assertPublisherSession(session);
   const path='assets/print-templates/'+crypto.randomUUID()+'.json';
-  await github('PUT',{message:'Publish Stores print template',branch:'main',content:encode(source)},path);
+  await github('PUT',{message:'Publish Stores print template',branch:'main',content:encode(source)},path,session);
   const next={...catalog,revision:(catalog.revision||0)+1,templates:catalog.templates.filter(t=>t.id!==m.id)};
   next.templates.push({id:m.id,name:m.name,kind:m.kind,paper:m.paper,path,sha256:hash,updatedAt:new Date().toISOString()});
   if(next.templates.length>100)throw Error('الحد الأقصى 100 قالب منشور');
-  await github('PUT',{message:'Update Stores print template catalog',branch:'main',...(catalogSha?{sha:catalogSha}:{}),content:encode(JSON.stringify(next,null,2)+'\n')},'print-templates.json');
+  await github('PUT',{message:'Update Stores print template catalog',branch:'main',...(catalogSha?{sha:catalogSha}:{}),content:encode(JSON.stringify(next,null,2)+'\n')},'print-templates.json',session);
+  assertPublisherSession(session);
   return 'المراجعة '+next.revision;
- }finally{printPublishing=false;}
+ }catch(error){publisherFailure(error,session);throw error;}
+ finally{if(printPublishing===session)printPublishing=null;}
 }};
 
 fresh();dates('appearance');connectionUi();
@@ -193,8 +282,7 @@ if(restoredToken){connectPublisher(restoredToken,true)}
 else{
  const generation=connectionGeneration;
  fetch('config.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(s=>{
-  if(generation!==connectionGeneration)return;
-  load(s);status('الإعدادات المنشورة جاهزة. أدخل رمز النشر مرة واحدة للاتصال وحفظه في هذا المتصفح.');
+  acceptAnonymousFile(s,generation);
  }).catch(()=>{if(generation===connectionGeneration)status('يمكن تجهيز مسودة. اتصل بحساب النشر لتحميل آخر نسخة.');});
 }
 </script></html>
