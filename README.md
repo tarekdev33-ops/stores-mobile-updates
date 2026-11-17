@@ -25,3 +25,9 @@ Fresh installations fetch immediately without relying on a stored revision or a 
 ## Publishing regression checks
 
 From this console directory, run `node tests/console-auth.test.cjs` (Node.js 18+). The tests use synthetic credentials and mocked GitHub responses; they do not publish live news.
+
+## Publisher repair — 2026.11.17.3
+
+Open the current console at `https://tarekdev33-ops.github.io/stores-mobile-updates/?console=20261117-3`; an already-open old tab can still display the obsolete connected state. The visible console build identifies the loaded implementation. This is a web-console update and does not need a new mobile APK.
+
+A connected state now proves Contents write by recreating the same tree without changing any commit or reference. Publishing repeats this check and compares the current config SHA before uploading any artwork. HTTP401 or credential-related403 clears the rejected credential, disables publishing and opens the repair guide, retaining drafts, images and current editor fields. A replacement token can continue the same draft when the live base is unchanged. GitHub account permissions must be granted in GitHub; the web console cannot elevate a rejected token.

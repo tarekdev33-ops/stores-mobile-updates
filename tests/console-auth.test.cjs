@@ -223,3 +223,29 @@ test('logout during print template upload prevents a later catalog write', async
   await enteredUpload.promise; h.run('disconnectPublisher()'); waiting.resolve(response({content: {sha: 'late-template'}})); await rejection;
   assert.equal(h.calls.some(call => call.method === 'PUT' && call.endpoint === 'contents/print-templates.json'), false);
 });
+
+test('revoked write access is detected again before any artwork or config upload and repair preserves the draft', async () => {
+  const h = harness(); await h.connect(); h.edit(); const before = h.snapshot();
+  h.controls.probeError = denied(); await h.publish();
+  assert.equal(h.calls.some(call => call.method === 'PUT'), false);
+  assert.equal(h.$('publish').disabled, true);
+  assert.equal(h.$('authRepair').hidden, false);
+  assert.equal(h.saved.size, 0);
+  assert.deepEqual(h.snapshot().state, before.state);
+  assert.equal(h.$('title').value, 'unsaved form text');
+  h.controls.probeError = null; await h.connect('synthetic-replacement-token');
+  assert.equal(h.$('authRepair').hidden, true);
+  await h.publish();
+  assert.equal(h.remote.state.revision, 8);
+  assert.equal(h.calls.filter(c => c.method === 'PUT' && c.endpoint === 'contents/config.json').length, 1);
+});
+
+test('publish rechecks the current source before artwork upload and stops a stale draft', async () => {
+  const h = harness(); await h.connect(); h.edit();
+  h.remote.sha = 'newer-live-file';
+  await h.publish();
+  assert.equal(h.calls.some(call => call.method === 'PUT'), false);
+  assert.equal(h.$('publish').disabled, true);
+  assert.equal(h.$('reloadPublished').hidden, false);
+  assert.equal(h.$('title').value, 'unsaved form text');
+});
