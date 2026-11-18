@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 16,
-  "validUntil": "2027-11-18T07:27:42.950Z",
+  "revision": 17,
+  "validUntil": "2027-11-18T07:30:33.747Z",
   "notices": [
     {
       "id": "notice_34583233-3921-4085-a7f5-fa19dab4c2bd",
@@ -33,7 +33,7 @@
     }
   ],
   "appearance": {
-    "start": "2026-11-04T18:35:00.000Z",
+    "start": "2026-11-04T19:32:00.000Z",
     "end": "2026-11-11T10:27:00.000Z",
     "role": "all",
     "color": "#ff0000",
