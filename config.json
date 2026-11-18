@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 14,
-  "validUntil": "2027-11-05T11:20:09.393Z",
+  "revision": 15,
+  "validUntil": "2027-11-18T07:22:43.976Z",
   "notices": [
     {
       "id": "notice_34583233-3921-4085-a7f5-fa19dab4c2bd",
@@ -36,7 +36,7 @@
     "start": "2026-11-04T18:35:00.000Z",
     "end": "2026-11-11T10:27:00.000Z",
     "role": "all",
-    "color": "#4dcece",
+    "color": "#ff0000",
     "textColor": "#edf2f7",
     "brandMode": "color",
     "brandTarget": "icon",
