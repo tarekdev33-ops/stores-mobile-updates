@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "revision": 17,
-  "validUntil": "2027-11-18T07:30:33.747Z",
+  "revision": 18,
+  "validUntil": "2027-11-18T07:46:08.130Z",
   "notices": [
     {
       "id": "notice_34583233-3921-4085-a7f5-fa19dab4c2bd",
@@ -30,13 +30,26 @@
         }
       },
       "imageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/112318bf-a59d-4a32-a0cb-39184b646d18.webp"
+    },
+    {
+      "id": "notice_47893301-cdc5-4052-9625-0ee97a963b63",
+      "start": "2026-11-18T07:43:00.000Z",
+      "end": "2026-11-25T07:44:00.000Z",
+      "role": "all",
+      "texts": {
+        "ar": {
+          "title": "اسعد",
+          "body": "مرحبا "
+        }
+      },
+      "imageUrl": "https://raw.githubusercontent.com/tarekdev33-ops/stores-mobile-updates/main/assets/campaigns/5d4f5268-5079-47fb-9bb5-1b3cb8eeab65.webp"
     }
   ],
   "appearance": {
     "start": "2026-11-04T19:32:00.000Z",
     "end": "2026-11-11T10:27:00.000Z",
     "role": "all",
-    "color": "#ff0000",
+    "color": "#00ff00",
     "textColor": "#edf2f7",
     "brandMode": "color",
     "brandTarget": "icon",
