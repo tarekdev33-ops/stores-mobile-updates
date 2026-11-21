@@ -12,21 +12,33 @@ const denied = (status = 403, message = 'Resource not accessible by personal acc
 const deferred = () => {let resolve; const promise = new Promise(r => {resolve = r;}); return {promise, resolve};};
 const response = (data, status = 200, headers = {}) => ({ok: status >= 200 && status < 300, status, headers: {get: key => headers[key.toLowerCase()] ?? null}, json: async () => data});
 
-function harness() {
+function harness({editor = false} = {}) {
   const elements = new Map(), saved = new Map(), listeners = new Map(), calls = [];
   const remote = {state: feed(), sha: 'feed-7', tree: 'tree-7', commit: 'commit-7'};
   const controls = {probeError: null, putError: null, intercept: null};
   const $ = id => {
-    if (!elements.has(id)) elements.set(id, {value: '', hidden: false, disabled: false, textContent: '', addEventListener() {}, scrollIntoView() {this.scrolled = true;}, focus() {this.focused = true;}});
+    if (!elements.has(id)) {
+      elements.set(id, {
+        value: '', hidden: false, disabled: false, textContent: '', style: {}, parentElement: {},
+        addEventListener() {}, removeAttribute() {}, reset() {},
+        append(child) {this.firstChild = child;},
+        scrollIntoView() {this.scrolled = true;}, focus() {this.focused = true;}
+      });
+    }
     return elements.get(id);
   };
+  const testTime = Date.parse('2026-11-21T12:00:00Z');
+  const Clock = class extends Date {static now() {return testTime;}};
   const context = {
-    $, Date, JSON, Error, Map, Set, TextEncoder, TextDecoder, Uint8Array, structuredClone, URL,
+    $, Date: editor ? Clock : Date, JSON, Error, Map, Set, TextEncoder, TextDecoder, Uint8Array, structuredClone, URL,
     crypto: webcrypto,
     atob: value => Buffer.from(value, 'base64').toString('binary'),
     btoa: value => Buffer.from(value, 'binary').toString('base64'),
     localStorage: {getItem: key => saved.get(key) ?? null, setItem: (key, value) => saved.set(key, value), removeItem: key => saved.delete(key)},
-    document: {addEventListener: (type, callback) => listeners.set(type, callback)},
+    document: {
+      addEventListener: (type, callback) => listeners.set(type, callback),
+      querySelector: () => ({cloneNode: () => ({style: {}, querySelector: () => ({getAttribute: () => 'M0 0L1 1'})})})
+    },
     window: {addEventListener() {}, open() {}},
     fetch: async (url, options) => {
       const endpoint = new URL(url).pathname.split('/stores-mobile-updates/')[1];
@@ -60,9 +72,27 @@ function harness() {
     section('async function uploadReferenced(', 'function selectedBrand('),
     section('let printPublishing=', "fresh();dates('appearance')")
   ]) vm.runInContext(script, context);
+  if (editor) {
+    for (const script of [
+      section('function status(', 'function update('),
+      section('function versionParts(', 'function renderDeliveryHealth('),
+      section('function edit(', 'function githubFailureKind('),
+      section('function load(', 'const publishTokenKey='),
+      section('function imageSource(', 'async function prepareImage('),
+      section("for(const id of ['color','textColor'])", 'async function uploadReferenced('),
+      section('function selectedBrand(', 'let printPublishing=')
+    ]) vm.runInContext(script, context);
+  }
   const run = code => vm.runInContext(code, context);
   return {
     $, run, calls, remote, controls, saved,
+    input(id, value, type = 'input') {
+      const target = $(id);
+      if (typeof value === 'boolean') target.checked = value;
+      else target.value = value;
+      target['on' + type]?.();
+      listeners.get(type)({target: {...target, id}});
+    },
     connect: (token = 'synthetic-owner-token') => run('connectPublisher(' + JSON.stringify(token) + ')'),
     publish: () => $('publish').onclick(),
     edit() {run("state.notices.push({id:'pending',imageUrl:'https://example.test/pending.webp'});uploads.set('https://example.test/pending.webp',{path:'assets/campaigns/pending.webp',content:'c3ludGhldGlj',preview:'blob:synthetic'});noticeImageUrl='https://example.test/pending.webp'"); $('title').value = 'unsaved form text'; listeners.get('input')({target: {id: 'title'}});},
@@ -80,6 +110,84 @@ test('connection proves write permission with an identical tree and does not pub
   assert.equal(h.$('publish').disabled, false);
   assert.equal(h.$('token').hidden, true);
   assert.equal(h.saved.size, 1);
+});
+
+test('appearance edits preview independent colors and publish them with a refreshed expired schedule', async () => {
+  const h = harness({editor: true});
+  const expired = {
+    start: '2026-11-04T10:00:00Z', end: '2026-11-11T10:00:00Z', role: 'all',
+    color: '#123456', textColor: '#654321', brandMode: 'color', brandTarget: 'both', decoration: 'none',
+  };
+  h.remote.state.appearance = expired;
+  await h.connect();
+  assert.equal(h.$('color').value, expired.color);
+  assert.equal(h.$('textColor').value, expired.textColor);
+  assert.equal(h.$('color').parentElement.hidden, false);
+  assert.equal(h.$('textColor').parentElement.hidden, false);
+  assert.equal(h.$('appearanceScheduleStatus').hidden, false);
+  assert.equal(h.calls.some(call => call.method === 'PUT'), false);
+  assert.deepEqual(h.snapshot().state.appearance, expired);
+
+  h.input('color', '#0088aa');
+  h.input('textColor', '#ffcc00');
+  assert.equal(h.$('iconPreview').firstChild.style.stroke, '#0088aa');
+  assert.equal(h.$('namePreview').style.color, '#ffcc00');
+  assert.equal(new Date(h.$('appearanceStart').value).toISOString(), '2026-11-21T11:59:00.000Z');
+  assert.equal(new Date(h.$('appearanceEnd').value).toISOString(), '2026-11-28T12:00:00.000Z');
+  assert.match(h.$('appearanceScheduleStatus').textContent, /مواعيد جديدة/);
+  await h.publish();
+
+  assert.deepEqual(h.remote.state.appearance, {
+    start: '2026-11-21T11:59:00.000Z', end: '2026-11-28T12:00:00.000Z', role: 'all',
+    color: '#0088aa', textColor: '#ffcc00', brandMode: 'color', brandTarget: 'both', decoration: 'none', motion: true,
+  });
+});
+
+test('direct styling enables appearance, keeps a manual schedule and respects explicit withdrawal', async () => {
+  const h = harness({editor: true});
+  await h.connect();
+  assert.equal(h.$('appearance').checked, false);
+  h.input('brandTarget', 'name', 'change');
+  h.input('textColor', '#ff0077');
+  assert.equal(h.$('appearance').checked, true);
+  assert.equal(h.$('color').parentElement.hidden, true);
+  assert.equal(h.$('textColor').parentElement.hidden, false);
+  h.input('appearanceStart', '2026-12-01T12:00');
+  h.input('appearanceEnd', '2026-12-08T12:00');
+  h.$('saveAppearance').onclick();
+  assert.equal(h.snapshot().state.appearance.textColor, '#ff0077');
+  h.input('textColor', '#ee7744');
+  h.input('title', 'notice not saved');
+  await h.publish();
+
+  assert.equal(h.remote.state.appearance.textColor, '#ee7744');
+  assert.equal(h.remote.state.appearance.start, new Date('2026-12-01T12:00').toISOString());
+  assert.equal(h.remote.state.appearance.end, new Date('2026-12-08T12:00').toISOString());
+  assert.deepEqual(h.remote.state.notices, []);
+  h.input('appearance', false, 'change');
+  await h.publish();
+  assert.equal(h.remote.state.appearance, null);
+});
+
+test('the dashboard removes device selectors, preserves old announcement audiences and defaults new ones to all', async () => {
+  assert.match(source, /<title>داش بورد ستورز<\/title>/);
+  assert.match(source, /<h1>داش بورد ستورز<\/h1>/);
+  assert.doesNotMatch(source, /<select\b[^>]*\bid="(?:role|targetRole)"/);
+  const h = harness({editor: true});
+  h.remote.state.notices = [{
+    id: 'old', start: '2026-11-21T11:00:00Z', end: '2026-11-29T11:00:00Z', role: 'terminal',
+    texts: {ar: {title: 'قديم', body: ''}},
+  }];
+  await h.connect();
+  h.run('edit(0)');
+  assert.equal(h.$('noticeAudience').hidden, false);
+  h.input('title', 'الإعلان السابق بعد التعديل');
+  h.$('notice').onsubmit({preventDefault() {}});
+  assert.equal(h.$('noticeAudience').hidden, true);
+  h.input('title', 'إعلان جديد');
+  h.$('notice').onsubmit({preventDefault() {}});
+  await h.publish();
+  assert.deepEqual(h.remote.state.notices.map(notice => notice.role), ['terminal', 'all']);
 });
 
 test('a read-only token can read public content but is rejected before saving or enabling Publish', async () => {

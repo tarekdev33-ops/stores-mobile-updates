@@ -1,8 +1,10 @@
-# Stores Mobile public campaigns
+# داش بورد ستورز
 
 Public announcements and scheduled, preloaded logo appearances only. This repository contains no app source, customer records, activation keys, accounting data, or publisher tokens.
 
 The dashboard is `index.html`, hosted on GitHub Pages. The app reads `config.json` through HTTPS, caches the last validated feed, filters by device role and app version, and checks the schedule locally even offline. Publication increments the feed revision. Publish empty notices and a null appearance to withdraw all content. Use a new notice id to announce the same subject again after users dismissed the previous notice.
+
+Open [داش بورد ستورز](https://tarekdev33-ops.github.io/stores-mobile-updates/?console=20261121-1). Choose the logo, the Stores lettering, or both and set each selected color independently. Publish uses the current appearance fields. Editing an expired appearance starts a new seven-day draft window, which you can change before publishing. New appearances and notices target all devices. Existing published notices retain their audience when edited.
 
 The recommended setup uses a fine-grained GitHub token created by `tarekdev33-ops`, restricted to `stores-mobile-updates`, with Contents read/write permission. The creation link prefills the resource owner and Contents write permission; select this repository before generating the token. Fine-grained tokens from another account cannot publish here through repository collaborator access. The dashboard also accepts other tokens that GitHub authorizes for writing this repository; it does not restrict a legitimate classic-token collaborator by account name.
 
